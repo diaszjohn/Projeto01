@@ -1,0 +1,140 @@
+<!DOCTYPE html> <!-- Informa ao navegador que este é um documento moderno em HTML5 -->
+<html lang="pt-BR"> <!-- Inicia a página e define o idioma como Português do Brasil -->
+<head>
+    <!-- A tag <head> guarda as configurações da página. Nada aqui aparece diretamente na tela. -->
+    <meta charset="UTF-8"> <!-- Permite o uso de caracteres especiais, como acentos (á, ç, ã) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o site se adaptar ao tamanho da tela -->
+    <meta name="description" content="Agendamento da auto-escola Aprimorar."> <!-- Descrição que aparece no Google -->
+    <title>Aprimorar | Instrutor Autônomo</title> <!-- O texto que aparece na aba do navegador -->
+    <link rel="icon" href="img/aprimorar.jpg"> <!-- O ícone pequeno que fica na aba do navegador -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Importa o arquivo CSS -->
+</head>
+<body>
+    <!-- A tag <body> contém tudo o que o usuário vai efetivamente VER na tela -->
+    
+    <!-- CABEÇALHO -->
+    <header class="cabecalho"> 
+        <div class="container cabecalho-conteudo"> 
+            
+            <!-- Logo que também funciona como um link para voltar ao topo -->
+            <a class="logo" href="#inicio">
+                <img src="img/aprimorar.jpg" alt="Logo Aprimorar">
+                <span>Aprimorar</span>
+            </a>
+
+            <!-- Menu de navegação -->
+            <nav aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#categorias">Categorias</a> <!-- Corrigido para bater com o ID da seção -->
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        
+        <!-- SEÇÃO 1: Tela Inicial (Hero) -->
+        <section class="hero" id="inicio"> 
+            <div class="container hero-conteudo">
+                <div>
+                    <p class="destaque">Instrutor Credenciado</p>
+                    <h1>Atendimento autônomo e exclusivo.</h1>
+                    <p class="hero-texto">
+                        Selecione sua categoria e garanta seu horário!
+                    </p>
+                    <a class="botao" href="#categorias">Ver categorias</a> <!-- Corrigido para rolar até as categorias -->
+                </div>
+
+                <!-- Ilustração decorativa -->
+                <div <div class="hero-ilustracao">
+    <img src="img/aprimorar.png" alt="Imagem da Autoescola Aprimorar">
+</div> 
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: Categorias -->
+        <section class="categorias" id="categorias">
+            <div class="container">
+                <div class="titulo-secao">
+                    <h2>Escolha sua categoria</h2> 
+                    <p>Produtos e preços fictícios para o projeto da turma.</p>
+                </div>
+
+                <!-- Grade onde ficarão as opções de CNH -->
+                <div class="grade-produtos">
+                    
+                    <!-- Item 1 -->
+                    <article class="card"> 
+                        <div class="card-icone">
+                        <img src="img/catcarromoto.png" alt="Ícone de um carro e moto"></div>
+                        <h3>CNH A/B</h3> 
+                        <p>Acelere a sua independência! O pacote completo para você pilotar e dirigir sem depender de ninguém.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 130,00</strong> 
+                            <a href="#agendamento">Escolher</a> <!-- Corrigido para descer até a área de agendamento -->
+                        </div>
+                    </article>
+
+                    <!-- Item 2 (Destacado) -->
+                    <article class="card card-destaque">
+                        <span class="selo">Favorito</span> 
+                        <div class="card-icone">
+                        <img src="img/catcarro.png" alt="Ícone de um carro"></div>
+                        <h3>CNH B</h3>
+                        <p>Para quem quer focar no essencial com máximo conforto. A chave para a sua primeira grande conquista no trânsito.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 80,00</strong>
+                            <a href="#agendamento">Escolher</a> <!-- Corrigido -->
+                        </div>
+                    </article>
+
+                    <!-- Item 3 -->
+                    <article class="card">
+                        <div class="card-icone">
+                        <img src="img/catmoto.png" alt="Ícone de uma moto"></div>
+                        <h3>CNH A</h3>
+                        <p>Apenas você, a moto e a estrada. A escolha perfeita para quem quer praticidade extrema e uma dose diária de vento no rosto.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 50,00</strong>
+                            <a href="#agendamento">Escolher</a> <!-- Corrigido -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: Instruções de Agendamento -->
+        <section class="pedido" id="agendamento"> <!-- ID alterado para #agendamento para os botões funcionarem -->
+            <div class="container pedido-conteudo">
+                <div>
+                    <p class="destaque">Como agendar</p>
+                    <h2>Um fluxo simples</h2>
+                </div>
+
+                <!-- Lista numerada com os passos -->
+                <ol> 
+                    <li><span>1</span> Escolha sua categoria.</li> 
+                    <li><span>2</span> Informe a cidade.</li>
+                    <li><span>3</span> Confirme o horário.</li>
+                    <li><span>4</span> Envie o agendamento pelo WhatsApp.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer id="contato"> 
+        <div class="container rodape-conteudo">
+            <div>
+                <strong>Aprimorar Instrutor Autônomo</strong>
+                <p>Projeto didático — dados fictícios.</p>
+            </div>
+            <div>
+                <p>Segunda a Sexta · 08h às 18h</p>
+                <p>Parnaíba — PI</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
